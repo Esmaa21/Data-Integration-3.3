@@ -14,12 +14,14 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
 | Person | Verwendete Tools (Modell) | Bereiche im Projekt |
 | --- | --- | --- |
 | Melissa | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, als Hauptwerkzeug; ChatGPT (OpenAI), Modellversion nicht bekannt, zur Gegenprüfung | GDELT; README (gemeinsam mit Idman) |
-| Idman | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Wikimedia Pageviews; README (gemeinsam mit Melissa) |
+| Idman | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, mit der Browser-Erweiterung Claude in Chrome | Wikimedia Pageviews; Künstlerliste; GDELT-Monatswerte und Excel-Arbeitstabelle; README (gemeinsam mit Melissa) |
 | Tanja | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Destatis |
 | Esma | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Repository; Wikipedia-Tourtabellen (optional, noch nicht als Datengrundlage beschlossen) |
 | Muhammed | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Eurostat HICP (optional, noch nicht als Datengrundlage beschlossen) |
 
 **Arbeitsweise Melissa:** Claude hat Abfragen, Prüfungen und Texte vorgeschlagen. Ich habe Claudes Vorschläge und Ergebnisse teilweise mit ChatGPT auf Plausibilität und mögliche Fehler gegengeprüft. Alle BigQuery-Abfragen habe ich selbst ausgeführt und die Ergebnisse exportiert.
+
+**Arbeitsweise Idman:** Claude hat Daten abgerufen, Abfragen und Skripte geschrieben und Texte vorgeschlagen. Mit meiner Zustimmung hat Claude dafür über die Chrome-Erweiterung in meinem Browser gearbeitet (Wikimedia-API, BigQuery-Sandbox in meinem Projekt, GitHub). Passwörter hat Claude nicht eingegeben. Die Entscheidungen (Künstler, Methode, was ins Repository kommt) habe ich getroffen. Vor dem Hochladen habe ich mir die Änderungen zeigen lassen.
 
 ## Einträge
 
@@ -84,12 +86,41 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
 - **Übernommen, geändert, verworfen:** Die To-do-Liste arbeite ich Schritt für Schritt ab
 - **Wie geprüft:** Ich prüfe jeden Schritt einzeln, bevor ich ihn übernehme
 
-### [Datum] · gdelt_articles.sql und Konzertpreise_Aufmerksamkeit.xlsx erstellt · [Person BITTE ERGÄNZEN]
-- **Tool und Modell:** [BITTE ERGÄNZEN oder „ohne KI“]
-- …
+### 09.11.2026 · gdelt_articles.sql/.csv und Konzertpreise_Aufmerksamkeit.xlsx erstellt · Idman
+- **Tool und Modell:** Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, mit Claude in Chrome
+- **Prompt (sinngemäß):** Eine Excel-Tabelle aufbauen, die Tanjas, Melissas und meine Daten zusammenführt (Tabellen A–E). GDELT-Daten direkt in die Tabelle einfügen. Melissas Dateien mit meiner Version vergleichen und die bessere Methode übernehmen.
+- **Output:**
+  - Erste GDELT-Abfrage über das Feld `Persons` und `.de`-Domains (294 GB)
+  - Vergleich mit Melissas Methode
+  - Neue Abfrage nach Melissas Methode für alle Tage 01/2017–01/2026, nur Name in der URL (282 GB statt 734 GB mit Seitentitel)
+  - Python-Skript für die Excel-Datei (openpyxl, Formeln für D und Analyse)
+- **Betroffene Dateien:** `data/gdelt_articles.sql`, `data/gdelt_articles.csv`, `data/wikimedia_pageviews.csv`, `data/Konzertpreise_Aufmerksamkeit.xlsx`
+- **Übernommen, geändert, verworfen:**
+  - Die erste Abfrage über `Persons` ist verworfen, weil sie deutsche Artikel stark unterzählt. Übernommen ist Melissas Methode. Helene Fischer habe ich nicht aufgenommen.
+  - Die Abfragen hat Claude in meinem BigQuery-Projekt ausgeführt.
+  - Monate ohne Treffer liefert die Abfrage nicht. Sie wurden danach per Python-Skript als 0 ergänzt (527 Zeilen aus BigQuery → 545 Zeilen in der CSV).
+  - Destatis-Werte stammen aus Tanjas Dateien.
+- **Wie geprüft:**
+  - Zeilenzahl und Summen je Künstler zwischen BigQuery-Ergebnis und CSV/Excel abgeglichen, sie sind identisch.
+  - Die Excel wurde mit LibreOffice neu berechnet: 0 Formelfehler.
+  - Danach Qualitätsprüfung durch Melissa (Eintrag oben). Ihre offenen Punkte (Normierung, Auswertung pro Künstler, Ausreißer) stehen in der Roadmap.
 
-### [Datum] · Wikimedia Pageviews · Idman
-[BITTE ERGÄNZEN oder „keine KI genutzt“]
+### 03.11. und 09.11.2026 · Wikimedia Pageviews und Künstlerliste · Idman
+- **Tool und Modell:** Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, mit Claude in Chrome
+- **Prompt (sinngemäß):** Monatliche Seitenaufrufe der deutschsprachigen Wikipedia-Artikel abrufen (zuerst Taylor Swift und Oasis, dann die fünf Künstler). Künstler vorschlagen, die in Melissas und meinen Daten passen, und prüfen, ob sie im Zeitraum in Deutschland Konzerte gegeben haben.
+- **Output:**
+  - Abruf über die Wikimedia Pageviews API (de.wikipedia, agent=user, monatlich), Umwandlung in CSV per Python
+  - Kennzahlen und Entwurf des Datensatzprofils (`labs/01/dataset.md` in meinem Lab-Repo)
+  - Recherche der Deutschland-Konzerte mit Quellen
+- **Betroffene Dateien:** `data/wikimedia_pageviews.csv`, Tabellenblatt `E_Künstlerliste`, Profil in meinem Lab-Repo
+- **Übernommen, geändert, verworfen:**
+  - Die Künstler habe ich selbst festgelegt: Taylor Swift, Ed Sheeran, Elton John, Bruce Springsteen, Lady Gaga.
+  - Oasis ist verworfen, weil es im Zeitraum keine Konzerte in Deutschland gab.
+  - Der zuerst geratene Artikeltitel `Oasis_(Band)` lieferte Nullen statt eines Fehlers. Er wurde durch den richtigen Titel `Oasis` ersetzt.
+- **Wie geprüft:**
+  - Je Künstler 109 Monate, keine Lücken. Summen nach dem Umwandeln mit den API-Werten abgeglichen.
+  - Konzertdaten mit verlinkten Quellen belegt (Spalte „Quelle“ in `E_Künstlerliste`).
+  - Offen: der Ausreißer Elton John 04/2021 (Prüfung der Tageswerte).
 
 ### [Datum] · Destatis · Tanja
 [BITTE ERGÄNZEN oder „keine KI genutzt“]
