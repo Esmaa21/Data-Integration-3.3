@@ -18,7 +18,7 @@ Diese README ist die zentrale Projektübersicht. Die ausführlichen Beschreibung
 
 ## Projektthema und Zielsetzung
 
-**Thema:** Zusammenhangsanalyse zwischen Online-Aufmerksamkeit, Medienberichterstattung und der relativen Preisentwicklung von Kulturangeboten in Deutschland (2017–2025).
+**Thema:** Zusammenhangsanalyse zwischen Online-Aufmerksamkeit, Medienberichterstattung und der relativen Preisentwicklung von Kulturangeboten in Deutschland (2017–2026).
 
 Wir verbinden drei offene Datenquellen:
 
