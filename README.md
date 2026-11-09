@@ -19,7 +19,7 @@ Gruppenrepository für das Semesterprojekt im Modul **DIS 3.3 Data Integration**
 |---|---|
 | Melissa | Datensatz GDELT (Medienberichterstattung) |
 | Idman | Datensatz Wikimedia Pageviews (Online-Aufmerksamkeit) |
-| Tanja | Datensatz Destatis (Kulturpreisindex und VPI) |
+| Tanja | Destatis VPI Datensätze: Gesamtindex und Teilindex Kulturveranstaltungen |
 | Esma | Einrichtung des Gruppenrepositorys. Datensatz Wikipedia-Tourtabellen, nur bei Bedarf |
 | Muhammed | Datensatz Eurostat HICP, nur bei Bedarf |
 
@@ -64,7 +64,7 @@ Jeder Datensatz deckt eine Seite der Forschungsfrage ab. Die ausführlichen Prof
 |---|---|---|---|---|---|
 | **GDELT 2.0 Global Knowledge Graph** | The GDELT Project | [GDELT Terms of Use](https://www.gdeltproject.org/about.html#termsofuse) (freie Nutzung mit Quellenangabe) | CSV (Rohdateien), BigQuery-Tabellen, JSON (API) | Melissa – [Profil](https://github.com/Melissakasterin/data-integration-labs/blob/main/labs/01/dataset.md) | Medienberichterstattung: Artikel pro Monat und Künstler |
 | **Wikimedia Pageviews** | Wikimedia Foundation | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | JSON (API), CSV, komprimierte Textdateien (Dumps) | Idman – [Profil](https://github.com/idmanhadafo1-cell/data-integration-labs/blob/main/labs/01/dataset.md) | Online-Aufmerksamkeit: Aufrufe der deutschsprachigen Wikipedia-Artikel |
-| **Destatis Verbraucherpreisindex** (61111-0004: CC13-09421 Kino, Theater, Konzert, Zirkus; 61111-0002: VPI gesamt) | Statistisches Bundesamt (Destatis) | [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0) | CSV, XLSX, JSON (GENESIS-API) | Tanja – [LINK_TANJA EINFÜGEN] | Preisentwicklung: Kulturpreisindex und VPI |
+| **Destatis Verbraucherpreisindex** (61111-0004: CC13-09421 Kino, Theater, Konzert, Zirkus; 61111-0002: VPI gesamt) | Statistisches Bundesamt (Destatis) | [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0) | CSV, XLSX, JSON (GENESIS-API) | Tanja – [Profil - VPI Kulturveranstaltungen](https://github.com/dreilingt/data-integration-labs/blob/main/labs/01/dataset.md) und [Profil - VPI Gesamt](https://github.com/dreilingt/data-integration-labs/blob/main/labs/01/dataset_2.md) | Preisentwicklung: Kulturpreisindex und VPI |
 
 **Warum der VPI?** Der Kulturpreisindex steigt auch dann, wenn alles teurer wird. Erst geteilt durch den VPI-Gesamtindex zeigt er, ob Kulturangebote **relativ** zu den übrigen Preisen teurer oder günstiger werden.
 
