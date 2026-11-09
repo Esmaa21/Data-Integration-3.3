@@ -30,7 +30,7 @@ Ziel ist es, gemeinsame Entwicklungen und zeitliche Abfolgen dieser Größen sic
 
 ## Forschungsfragen
 
-**F1:** Gehen Veränderungen der Online-Aufmerksamkeit (Aufrufe deutschsprachiger Wikipedia-Artikel ausgewählter Künstler) und der Medienberichterstattung (Anzahl GDELT-Nachrichtenartikel zu diesen Künstlern) mit Veränderungen des relativen Preisindex für den Besuch von Kino, Theater, Konzert und Zirkus (Destatis CC13-09421 geteilt durch den VPI-Gesamtindex) in Deutschland von 2017 bis 2025 einher?
+**F1:** Gehen Veränderungen der Online-Aufmerksamkeit (Aufrufe deutschsprachiger Wikipedia-Artikel ausgewählter Künstler) und der Medienberichterstattung (Anzahl GDELT-Nachrichtenartikel zu diesen Künstlern) mit Veränderungen des relativen Preisindex für den Besuch von Kino, Theater, Konzert und Zirkus (Destatis CC13-09421 geteilt durch den VPI-Gesamtindex) in Deutschland von 2017 bis 2026 einher?
 
 **F2:** Folgen die Wikipedia-Aufrufe ausgewählter Künstler zeitlich der Medienberichterstattung über sie, und wie stark reagieren beide auf große Tour-Ankündigungen (z. B. Oasis-Reunion, August 2024)?
 
@@ -43,7 +43,7 @@ Ziel ist es, gemeinsame Entwicklungen und zeitliche Abfolgen dieser Größen sic
 | Aspekt | Festlegung |
 |---|---|
 | Region | Nur Deutschland. Nachbarländer höchstens kurz als Kontext, nicht als Teil der Untersuchung |
-| Zeitraum | 2017–2025 |
+| Zeitraum | 2017–2026 |
 | Künstler | Fünf Künstler, darunter Taylor Swift. **Offen:** Die vollständige Liste wird noch finalisiert |
 | Datensätze | Zunächst nur die drei Kerndatensätze unten. Weitere Datensätze aus der Gruppe nur bei tatsächlichem Bedarf |
 
