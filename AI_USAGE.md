@@ -15,13 +15,15 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
 | --- | --- | --- |
 | Melissa | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, als Hauptwerkzeug; ChatGPT (OpenAI), Modellversion nicht bekannt, zur Gegenprüfung | GDELT; README (gemeinsam mit Idman) |
 | Idman | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, mit der Browser-Erweiterung Claude in Chrome | Wikimedia Pageviews; Künstlerliste; GDELT-Monatswerte und Excel-Arbeitstabelle; README (gemeinsam mit Melissa) |
-| Tanja | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Destatis |
+| Tanja | Claude (Anthropic), eingestelltes Modell `claude-sonnet-5-5` | Destatis |
 | Esma | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Repository; Wikipedia-Tourtabellen (optional, noch nicht als Datengrundlage beschlossen) |
 | Muhammed | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Eurostat HICP (optional, noch nicht als Datengrundlage beschlossen) |
 
 **Arbeitsweise Melissa:** Claude hat Abfragen, Prüfungen und Texte vorgeschlagen. Ich habe Claudes Vorschläge und Ergebnisse teilweise mit ChatGPT auf Plausibilität und mögliche Fehler gegengeprüft. Alle BigQuery-Abfragen habe ich selbst ausgeführt und die Ergebnisse exportiert.
 
 **Arbeitsweise Idman:** Claude hat Daten abgerufen, Abfragen und Skripte geschrieben und Texte vorgeschlagen. Mit meiner Zustimmung hat Claude dafür über die Chrome-Erweiterung in meinem Browser gearbeitet (Wikimedia-API, BigQuery-Sandbox in meinem Projekt, GitHub). Passwörter hat Claude nicht eingegeben. Die Entscheidungen (Künstler, Methode, was ins Repository kommt) habe ich getroffen. Vor dem Hochladen habe ich mir die Änderungen zeigen lassen.
+
+**Arbeitsweise Tanja**: Claude hat mir Vorschläge für das Datensatzprofil und die Formulierungen gemacht. Die hochgeladenen Destatis-Dateien hat Claude mit Python ausgewertet, also zum Beispiel Zeilen, Platzhalter und Wertebereiche geprüft. Diese Ergebnisse habe ich anschließend selbst kontrolliert und mit eigenen Berechnungen in Excel nachgerechnet.
 
 ## Einträge
 
@@ -122,5 +124,20 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
   - Konzertdaten mit verlinkten Quellen belegt (Spalte „Quelle“ in `E_Künstlerliste`).
   - Offen: der Ausreißer Elton John 04/2021 (Prüfung der Tageswerte).
 
-### [Datum] · Destatis · Tanja
-[BITTE ERGÄNZEN oder „keine KI genutzt“]
+### 08.11.2026-09.11.2026 · Datensatzprofil Verbraucherpreisindex (Tabelle 61111-0004 -> CC13-09421, Flat-CSV) · Tanja
+- **Tool und Modell:** Claude (Anthropic), Claude Sonnet 5.5
+- **Prompt:** (sinngemäß) Ich habe mein bestehendes Datensatzprofil (Wide-Format) und die Destatis-Datei im Flat-Format hochgeladen und gebeten, das Profil für das neue Format zu aktualisieren. Danach sollte Claude mein FAIR-Review, den Abschnitt zum zweiten Datensatz an das Flat-Format anpassen und die Next steps als Mermaid-Flussdiagramm darstellen.
+- **Output:** Claude hat die Flat-CSV mit Python (pandas) ausgewertet (Zeilen, Spalten, Platzhalter `...`, Flags, Min/Max/Mittelwert) und daraus ein neues Profil entworfen. Dazu kamen eine angepasste FAIR-Tabelle und ein Mermaid-Flussdiagramm für die Next steps (zwei parallele Zweige, die in einem Join zusammenlaufen).
+- **Betroffene Dateien:** `labs/01/dataset.md` in meinem Lab-Repo.
+- **Übernommen, geändert, verworfen:** Übernommen: Berechnungen, Tabellen, Absatz zur Dokumentation, Formulierungen im FAIR-Review, Mermaid-Diagramm. Verworfen: Claudes Bewertung „~“ für R1 (ich habe „✗“ beibehalten, weil die einzelnen Spalten nirgends beschrieben sind).
+- **Wie geprüft:** Min/Max/Mittelwert in Excel nachgerechnet (Formeln, z. B. MINIFS, MAXIFS, AVERAGEIFS), Lizenz- und Quellenlinks selbst geöffnet, Werte der Flags und Platzhalter in der Zeichenerklärung von GENESIS nachgelesen.
+- *Offen:* Klassifikation der Codes (COICOP oder SEA 2013) noch nicht abschließend geklärt.
+
+### 09.11.2026 · Datensatzprofil Gesamtindex (Tabelle 61111-0002, Flat-CSV) · Tanja
+- **Tool und Modell:** Claude (Anthropic), Claude Sonnet 5.5
+- **Prompt:** (sinngemäß) Ich habe die zweite Destatis-Datei (Gesamtindex) hochgeladen und gebeten, nach dem Muster meines endgültigen ersten Profils ein Profil zu erstellen. Danach sollte Claude die Next steps als Mermaid-Flussdiagramm darstellen.
+- **Output:** Claude hat die Datei mit Python (pandas) ausgewertet: 360 Zeilen und 18 Spalten, je Monat drei Werte (Index, Veränderung zum Vorjahresmonat, Veränderung zum Vormonat), Platzhalter `...` und `-`, Flags. Die beiden Prozentzeilen sind in der Datei nicht gekennzeichnet; Claude hat sie über die Zeilenreihenfolge zugeordnet und durch Nachrechnen aus dem Index bestätigt. Dazu kam ein Mermaid-Flussdiagramm für die Next steps (zwei parallele Zweige, die in einem Join zusammenlaufen).
+- **Betroffene Dateien:** `labs/01/dataset_2.md` in meinem Lab-Repo.
+- **Übernommen, geändert, verworfen:** Übernommen: Berechnungen, Tabellen, Auffälligkeiten (u. a. die Reihenfolge der drei Werte je Monat) und Mermaid-Diagramm. Geändert: Erklärung des Platzhalters `-`; das FAIR-Review habe ich selbst auf Basis des Reviews für Tabelle 61111-0004 erstellt. Verworfen: Claudes Vorschlag, die Prozentwerte als eigene Spalten `change_yoy_pct` und `change_mom_pct` zu benennen (stattdessen eine Spalte `measure`).
+- **Wie geprüft:** Werte in Excel nachgerechnet, Bedeutung von `-` und `...` in der Zeichenerklärung nachgelesen, Links geöffnet.
+- *Offen:* R1.3 im FAIR-Review noch zu ergänzen.
