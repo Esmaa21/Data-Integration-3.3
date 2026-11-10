@@ -133,9 +133,9 @@ Die Tabellenstrukturen für die drei Datensätze haben wir gemeinsam festgelegt.
 
 **Offen**
 
-- [ ] Datensatzprofil Destatis verlinken
-- [ ] Lizenzen aller drei Datensätze (GDELT, Wikimedia Pageviews, Destatis) prüfen und klären, ob und unter welcher Lizenz wir die kombinierten Daten veröffentlichen dürfen
-- [ ] Abgabe Meilenstein 1 am 13.11.2026
+- [x] Datensatzprofil Destatis verlinken
+- [x] Lizenzen aller drei Datensätze (GDELT, Wikimedia Pageviews, Destatis) prüfen und klären, ob und unter welcher Lizenz wir die kombinierten Daten veröffentlichen dürfen
+- [x] Abgabe Meilenstein 1 am 13.11.2026
 - [ ] Danach: Daten zusammenführen und auswerten (siehe [Geplantes Vorgehen](#geplantes-vorgehen))
 
 ## Lizenzen
