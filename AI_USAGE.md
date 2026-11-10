@@ -16,7 +16,7 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
 | Melissa | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, als Hauptwerkzeug; ChatGPT (OpenAI), Modellversion nicht bekannt, zur Gegenprüfung | GDELT; README (gemeinsam mit Idman) |
 | Idman | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, mit der Browser-Erweiterung Claude in Chrome | Wikimedia Pageviews; Künstlerliste; GDELT-Monatswerte und Excel-Arbeitstabelle; README (gemeinsam mit Melissa) |
 | Tanja | Claude (Anthropic), eingestelltes Modell `claude-sonnet-5-5` | Destatis |
-| Esma | [BITTE ERGÄNZEN oder „keine KI genutzt“] | Repository; Wikipedia-Tourtabellen (optional, noch nicht als Datengrundlage beschlossen) |
+| Esma | Claude (Anthropic), eingestelltes Modell `claude-sonnet-5-` | Repository; Wikipedia-Tourtabellen (optional, noch nicht als Datengrundlage beschlossen) |
 | Muhammed | [keine KI genutzt] | Eurostat HICP (optional, noch nicht als Datengrundlage beschlossen) |
 
 **Arbeitsweise Melissa:** Claude hat Abfragen, Prüfungen und Texte vorgeschlagen. Ich habe Claudes Vorschläge und Ergebnisse teilweise mit ChatGPT auf Plausibilität und mögliche Fehler gegengeprüft. Alle BigQuery-Abfragen habe ich selbst ausgeführt und die Ergebnisse exportiert.
