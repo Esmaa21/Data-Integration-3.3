@@ -65,6 +65,8 @@ Jeder Datensatz deckt eine Seite der Forschungsfrage ab. Die ausführlichen Prof
 | **GDELT 2.0 Global Knowledge Graph** | The GDELT Project | [GDELT Terms of Use](https://www.gdeltproject.org/about.html#termsofuse) (freie Nutzung mit Quellenangabe) | CSV (Rohdateien), BigQuery-Tabellen, JSON (API) | Melissa – [Profil](https://github.com/Melissakasterin/data-integration-labs/blob/main/labs/01/dataset.md) | Medienberichterstattung: Artikel pro Monat und Künstler |
 | **Wikimedia Pageviews** | Wikimedia Foundation | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | JSON (API), CSV, komprimierte Textdateien (Dumps) | Idman – [Profil](https://github.com/idmanhadafo1-cell/data-integration-labs/blob/main/labs/01/dataset.md) | Online-Aufmerksamkeit: Aufrufe der deutschsprachigen Wikipedia-Artikel |
 | **Destatis Verbraucherpreisindex** (61111-0004: CC13-09421 Kino, Theater, Konzert, Zirkus; 61111-0002: VPI gesamt) | Statistisches Bundesamt (Destatis) | [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0) | CSV, XLSX, JSON (GENESIS-API) | Tanja – [Profil - VPI Kulturveranstaltungen](https://github.com/dreilingt/data-integration-labs/blob/main/labs/01/dataset.md) und [Profil - VPI Gesamt](https://github.com/dreilingt/data-integration-labs/blob/main/labs/01/dataset_2.md) | Preisentwicklung: Kulturpreisindex und VPI |
+| **HICP – Cinemas, theatres and concerts** | European Central Bank (ECB) | ECB Policy/EZB | CSV (Comma-Separated Values) | 
+
 
 **Warum der VPI?** Der Kulturpreisindex steigt auch dann, wenn alles teurer wird. Erst geteilt durch den VPI-Gesamtindex zeigt er, ob Kulturangebote **relativ** zu den übrigen Preisen teurer oder günstiger werden.
 
@@ -81,6 +83,7 @@ Die Tabellenstrukturen für die drei Datensätze haben wir gemeinsam festgelegt.
 | C – GDELT | `month`, `artist`, `article_count`, `avg_tone` | Artikel pro Monat und Künstler, mittlerer Ton |
 | D – Zusammengeführt | `month`, `artist`, `pageviews`, `article_count`, `kultur_index`, `vpi_gesamt` | A, B und C über `month` und `artist` verbunden |
 | E – Künstlerliste | `artist`, `wikipedia_title`, `Auswahlkriterium`, `Quelle` | Die fünf Künstler mit Begründung |
+
 
 ### Daten im Repository
 
