@@ -15,7 +15,7 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
 | --- | --- | --- |
 | Melissa | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, als Hauptwerkzeug; ChatGPT (OpenAI), Modellversion nicht bekannt, zur Gegenprüfung | GDELT; README (gemeinsam mit Idman) |
 | Idman | Claude (Anthropic), eingestelltes Modell `claude-opus-5-5`, mit der Browser-Erweiterung Claude in Chrome | Wikimedia Pageviews; Künstlerliste; GDELT-Monatswerte und Excel-Arbeitstabelle; README (gemeinsam mit Melissa) |
-| Tanja | Claude (Anthropic), eingestelltes Modell `claude-sonnet-5-5` | Destatis |
+| Tanja | Claude (Anthropic), eingestelltes Modell `claude-sonnet-5-5`; ChatGPT (OpenAI), Modell GPT-6, als unterstützendes Werkzeug zur Recherche, Informationssuche und zum Brainstorming | Destatis |
 | Esma | Claude (Anthropic), eingestelltes Modell `claude-sonnet-5-` | Repository; Wikipedia-Tourtabellen (optional, noch nicht als Datengrundlage beschlossen) |
 | Muhammed | [keine KI genutzt] | Eurostat HICP (optional, noch nicht als Datengrundlage beschlossen) |
 
@@ -141,3 +141,16 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
 - **Übernommen, geändert, verworfen:** Übernommen: Berechnungen, Tabellen, Auffälligkeiten (u. a. die Reihenfolge der drei Werte je Monat) und Mermaid-Diagramm. Geändert: Erklärung des Platzhalters `-`; das FAIR-Review habe ich selbst auf Basis des Reviews für Tabelle 61111-0004 erstellt. Verworfen: Claudes Vorschlag, die Prozentwerte als eigene Spalten `change_yoy_pct` und `change_mom_pct` zu benennen (stattdessen eine Spalte `measure`).
 - **Wie geprüft:** Werte in Excel nachgerechnet, Bedeutung von `-` und `...` in der Zeichenerklärung nachgelesen, Links geöffnet.
 - *Offen:* R1.3 im FAIR-Review noch zu ergänzen.
+
+### 10.11.2026 · Recherche zu Künstlern, die Deutschland zwischen 2017 und 2025 besucht haben · Tanja
+- **Tool und Modell:** **ChatGPT (GPT-6)**
+- **Prompts (wörtlich)**:
+    - „when and where (in which German cities) were the shows of Cirque du Soleil between 01.01.2017 - 01.12.2025 in Germany? Provide the links to prove"
+    - „and when did Johnny Depp visit Germany during this period of time?"
+    - „was there any famous theater actor or actress who was in Germany during this period of time? give me a list as well"
+- **Output:**
+    - Liste der Cirque-du-Soleil-Tourneen in Deutschland (OVO, TOTEM, CRYSTAL, CORTEO, ALIZÉ) mit Städten, Terminen und Quellenlinks. Dazu die Helene-Fischer-Arena-Touren 2017-2018 und 2023, bei denen Cirque du Soleil die Produktion gestaltet hat, und eine Liste von 14 deutschen Städten
+    - Chronologie der Deutschlandbesuche von Johnny Depp (2018, 2020, 2022, 2023) mit Quellen
+    - Liste bekannter Theaterschauspieler in Deutschland (John Malkovich, Isabelle Huppert, Ingeborga Dapkūnaitė, Sophie von Kessel) mit Terminen, Orten und Quellen, dazu eine Übersicht nach Jahren
+- **Übernommen, geändert, verworfen:** Als Theaterschauspieler habe ich nur John Malkovich übernommen. Die Termine habe ich nicht vollständig übernommen: z.B. Die Liste der Konzerte von Johnny Depp in Deutschland war fehlerhaft und unvollständig. Bei einigen genannten Terminen hat nach meiner Recherche kein Auftritt stattgefunden, und einige Konzerte hat die KI nicht genannt (zum Beispiel Mainz am 30.06.2023 und Oberhausen am 20.06.2023). Diese habe ich selbst ergänzt.
+- **Wie geprüft:** Die Termine habe ich selbst durch eine Internetrecherche nachgeprüft.
