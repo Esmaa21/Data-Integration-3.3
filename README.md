@@ -106,10 +106,6 @@ Die Tabellenstrukturen für die drei Datensätze haben wir gemeinsam festgelegt.
 
 **F2:** Folgen die Wikipedia-Aufrufe ausgewählter Künstler zeitlich der Medienberichterstattung über sie, und wie stark reagieren beide auf große Tour-Ankündigungen und Tourneen in Deutschland (z. B. Taylor Swifts Eras Tour in Gelsenkirchen, Hamburg und München, Juli 2024)?
 
-**F3 (optionale Erweiterung, noch nicht beschlossen):** [F3-WORTLAUT EINFÜGEN]
-
-> F3 ist nicht Teil des aktuellen Projektumfangs. Ob wir sie bearbeiten, entscheiden wir später gemeinsam.
-
 ## Plan
 
 ### Geplantes Vorgehen
