@@ -133,12 +133,11 @@ Die Tabellenstrukturen für die drei Datensätze haben wir gemeinsam festgelegt.
 - [x] Datensatzprofil Wikimedia Pageviews verlinkt
 - [x] Liste der fünf Künstler finalisiert
 - [x] Erste Daten für Tabellen A, B und C aufbereitet (siehe [Daten im Repository](#daten-im-repository))
-
-**Offen**
-
 - [x] Datensatzprofil Destatis verlinken
 - [x] Lizenzen aller drei Datensätze (GDELT, Wikimedia Pageviews, Destatis) prüfen und klären, ob und unter welcher Lizenz wir die kombinierten Daten veröffentlichen dürfen
-- [x] Abgabe Meilenstein 1 am 13.11.2026
+
+**Offen**
+- [ ] Abgabe Meilenstein 1 am 13.11.2026
 - [ ] Danach: Daten zusammenführen und auswerten (siehe [Geplantes Vorgehen](#geplantes-vorgehen))
 
 ## Lizenzen
@@ -152,4 +151,4 @@ Quellenangaben für die Dateien in `data/`:
 * Wikimedia Pageviews: Wikimedia Foundation, [Analytics API](https://doc.wikimedia.org/analytics-api), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 * GDELT: GDELT 2.0 Global Knowledge Graph von [The GDELT Project](https://www.gdeltproject.org/), genutzt gemäß den [GDELT Terms of Use](https://www.gdeltproject.org/about.html#termsofuse)
 
-Alle drei Datensätze dürfen genutzt, verändert, zusammengeführt und weitergegeben werden, sofern die Quelle genannt wird (Destatis: Namensnennung nach dl-de/by-2-0 mit Änderungshinweis; Wikimedia: CC0 1.0, keine Bedingungen; GDELT: Zitat des GDELT Project mit Link). Share-Alike-, Non-Commercial- oder No-Derivatives-Bedingungen gibt es nicht. Die Veröffentlichung der zusammengeführten Daten ist daher zulässig. Wir veröffentlichen sie unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Diese Lizenz gilt nur für unsere eigene Arbeit (Auswahl, Aufbereitung, Zusammenführung). Die Quellenangaben oben müssen bei jeder Weitergabe erhalten bleiben.
+Alle drei Datensätze dürfen genutzt, verändert, zusammengeführt und weitergegeben werden, sofern die Quelle genannt wird (Destatis: Namensnennung nach dl-de/by-2-0 mit Änderungshinweis; Wikimedia: CC0 1.0, keine Bedingungen; GDELT: Zitat des GDELT Project mit Link). Share-Alike-, Non-Commercial- oder No-Derivatives-Bedingungen gibt es nicht. Die Veröffentlichung der zusammengeführten Daten ist daher zulässig. Wir veröffentlichen sie unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Diese Lizenz deckt ausschließlich unsere eigenen Rechte am zusammengeführten Datensatz (Auswahl, Aufbereitung, Zusammenführung) ab und überträgt keine Rechte Dritter oder Rechte an den zugrunde liegenden Nachrichtenartikeln. Die Originaldaten behalten die Bedingungen ihrer Quellen, und die Quellenangaben oben müssen bei jeder Weitergabe erhalten bleiben.
