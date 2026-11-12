@@ -137,6 +137,31 @@ Die Tabellenstrukturen für die drei Datensätze haben wir gemeinsam festgelegt.
 - [ ] Abgabe Meilenstein 1 am 13.11.2026
 - [ ] Danach: Daten zusammenführen und auswerten (siehe [Geplantes Vorgehen](#geplantes-vorgehen))
 
+**Geplant bis Meilenstein 2 (Abgabe und World Café am 18.12.2026): gemeinsamer Datensatz**
+
+- [ ] Daten per Web Scraping bzw. API beschaffen (Kurstermin Web Scraping, 27.11.) – jede Person für ihren Datensatz: Melissa (GDELT), Idman (Wikimedia Pageviews), Tanja (Destatis); Muhammed (HICP) und Esma (Konzerttouren) bei Bedarf
+- [ ] Geeignete Dateiformate für den gemeinsamen Datensatz festlegen (Kurstermin Datenstrukturen und Formate, 04.12.) – Muhammed
+- [ ] Daten bereinigen (Kurstermin Data Cleaning, 11.12.) – jede Person für ihren Datensatz
+- [ ] Geeignete Schlüssel zum Verknüpfen der Datensätze finden (z. B. Künstler und Monat) – Melissa, Tanja
+- [ ] Alle Daten zu einem gemeinsamen Datensatz zusammenführen – alle gemeinsam
+- [ ] Pipeline als Jupyter Notebook erstellen, die den gemeinsamen Datensatz aus den Rohdaten baut – Idman, Muhammed (alle liefern den Code für ihren Datensatz)
+- [ ] Data Dictionary erstellen (Beschreibung aller Spalten) – Esma (alle liefern die Spaltenbeschreibungen für ihre Tabelle)
+- [ ] Datensatz dokumentieren und auf Zenodo veröffentlichen (inklusive DOI) – Esma, Melissa
+- [ ] World Café am 18.12.2026 vorbereiten – Tanja, Idman
+- [ ] Abgabe Meilenstein 2 und World Café am 18.12.2026 – alle
+
+**Geplant bis Meilenstein 3 (Präsentation und Prüfung am 25.01.2027)**
+
+- [ ] Hypothesen zu F1 und F2 konkretisieren und testen (Kurstermin Hypothesis Testing, 08.01.) – alle gemeinsam
+- [ ] Visualisierungen erstellen (anschauliche und informative Tabellen und Diagramme) – Melissa, Idman, Tanja (je zu ihrem Datensatz)
+- [ ] Ergebnisse interpretieren und Antworten auf F1 und F2 formulieren – Muhammed, Esma
+- [ ] Demo des laufenden Notebooks vorbereiten, die in der Präsentation gezeigt wird – Idman
+- [ ] Repository-Stand finalisieren (es zählt der Stand vom 22.01.2027) – Melissa, Esma (alle prüfen ihren Teil)
+- [ ] Präsentation mit den Ergebnissen vorbereiten (Folien) – Tanja, Muhammed
+- [ ] Präsentation proben (Wrap Up / QA, 22.01.) – alle
+- [ ] Präsentation am 25.01.2027 – alle
+
+
 ## Lizenzen
 Der Code in diesem Repository steht unter der MIT-Lizenz (siehe [LICENSE](https://github.com/Esmaa21/Data-Integration-3.3/blob/main/LICENSE)). Die MIT-Lizenz gilt nicht für die verwendeten Datensätze. Diese stammen von Dritten und unterliegen weiterhin den Lizenzen bzw. Nutzungsbedingungen ihrer jeweiligen Quellen. Sie sind in den verlinkten Datensatzprofilen dokumentiert.
 
