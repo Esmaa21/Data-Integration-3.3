@@ -142,17 +142,14 @@ Die Tabellenstrukturen für die drei Datensätze haben wir gemeinsam festgelegt.
 - [ ] Danach: Daten zusammenführen und auswerten (siehe [Geplantes Vorgehen](#geplantes-vorgehen))
 
 ## Lizenzen
-
-Dieses Repository steht unter der MIT-Lizenz (siehe [LICENSE](LICENSE)). **Die MIT-Lizenz gilt nicht für die verwendeten Datensätze.** Diese stammen von Dritten und unterliegen weiterhin den Lizenzen bzw. Nutzungsbedingungen ihrer jeweiligen Quellen. Sie sind in den verlinkten Datensatzprofilen dokumentiert.
+Der Code in diesem Repository steht unter der MIT-Lizenz (siehe [LICENSE](https://github.com/Esmaa21/Data-Integration-3.3/blob/main/LICENSE)). Die MIT-Lizenz gilt nicht für die verwendeten Datensätze. Diese stammen von Dritten und unterliegen weiterhin den Lizenzen bzw. Nutzungsbedingungen ihrer jeweiligen Quellen. Sie sind in den verlinkten Datensatzprofilen dokumentiert.
 
 Quellenangaben für die Dateien in `data/`:
 
-- **Destatis:**\
-    "Verbraucherpreisindex: Deutschland, Monate (Table 61111-0004, series CC13-09421)" by Statistisches Bundesamt (Destatis), Genesis-Online, https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0004, [Data licence by-2-0](https://www.govdata.de/dl-de/by-2-0)
+* Destatis:
+  * "Verbraucherpreisindex: Deutschland, Monate (Table 61111-0004, series CC13-09421)" by Statistisches Bundesamt (Destatis), Genesis-Online, https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0004, [Data licence by-2-0](https://www.govdata.de/dl-de/by-2-0). **Daten geändert:** ausgewählt, aufbereitet, mit weiteren Datensätzen zusammengeführt.
+  * "Verbraucherpreisindex: Deutschland, Monate (Table 61111-0002)" by Statistisches Bundesamt (Destatis), Genesis-Online, https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0002, [Data licence by-2-0](https://www.govdata.de/dl-de/by-2-0). **Daten geändert:** ausgewählt, aufbereitet und mit weiteren Datensätzen zusammengeführt.
+* Wikimedia Pageviews: Wikimedia Foundation, [Analytics API](https://doc.wikimedia.org/analytics-api), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+* GDELT: GDELT 2.0 Global Knowledge Graph von [The GDELT Project](https://www.gdeltproject.org/), genutzt gemäß den [GDELT Terms of Use](https://www.gdeltproject.org/about.html#termsofuse)
 
-    "Verbraucherpreisindex: Deutschland, Monate (Table 61111-0002)" by Statistisches Bundesamt (Destatis), Genesis-Online, https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0002, [Data licence by-2-0](https://www.govdata.de/dl-de/by-2-0)
-  
-- **Wikimedia Pageviews:** Wikimedia Foundation, [Analytics API](https://doc.wikimedia.org/analytics-api), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
-- **GDELT:** GDELT 2.0 Global Knowledge Graph von [The GDELT Project](https://www.gdeltproject.org/), genutzt gemäß den [GDELT Terms of Use](https://www.gdeltproject.org/about.html#termsofuse)
-
-**Offen:** Die Prüfung der Lizenzen aller drei Datensätze und ihrer Kombination steht noch aus (siehe [Roadmap](#roadmap)).
+Alle drei Datensätze dürfen genutzt, verändert, zusammengeführt und weitergegeben werden, sofern die Quelle genannt wird (Destatis: Namensnennung nach dl-de/by-2-0 mit Änderungshinweis; Wikimedia: CC0 1.0, keine Bedingungen; GDELT: Zitat des GDELT Project mit Link). Share-Alike-, Non-Commercial- oder No-Derivatives-Bedingungen gibt es nicht. Die Veröffentlichung der zusammengeführten Daten ist daher zulässig. Wir veröffentlichen sie unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Diese Lizenz gilt nur für unsere eigene Arbeit (Auswahl, Aufbereitung, Zusammenführung). Die Quellenangaben oben müssen bei jeder Weitergabe erhalten bleiben.
