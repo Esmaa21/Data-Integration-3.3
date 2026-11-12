@@ -147,7 +147,11 @@ Dieses Repository steht unter der MIT-Lizenz (siehe [LICENSE](LICENSE)). **Die M
 
 Quellenangaben für die Dateien in `data/`:
 
-- **Destatis:** GENESIS-Tabellen 61111-0004 und 61111-0002, ©️ Statistisches Bundesamt (Destatis), 2026, [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0)
+- **Destatis:**\
+    "Verbraucherpreisindex: Deutschland, Monate (Table 61111-0004, series CC13-09421)" by Statistisches Bundesamt (Destatis), Genesis-Online, https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0004, [Data licence by-2-0](https://www.govdata.de/dl-de/by-2-0)
+
+    "Verbraucherpreisindex: Deutschland, Monate (Table 61111-0002)" by Statistisches Bundesamt (Destatis), Genesis-Online, https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0002, [Data licence by-2-0](https://www.govdata.de/dl-de/by-2-0)
+  
 - **Wikimedia Pageviews:** Wikimedia Foundation, [Analytics API](https://doc.wikimedia.org/analytics-api), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 - **GDELT:** GDELT 2.0 Global Knowledge Graph von [The GDELT Project](https://www.gdeltproject.org/), genutzt gemäß den [GDELT Terms of Use](https://www.gdeltproject.org/about.html#termsofuse)
 
