@@ -21,7 +21,7 @@ Gruppenrepository für das Semesterprojekt im Modul **DIS 3.3 Data Integration**
 | Idman | Datensatz Wikimedia Pageviews (Online-Aufmerksamkeit) |
 | Tanja | Destatis VPI Datensätze: Gesamtindex und Teilindex Kulturveranstaltungen |
 | Esma | Einrichtung des Gruppenrepositorys. Datensatz Wikipedia-Tourtabellen, nur bei Bedarf |
-| Muhammed | Datensatz Eurostat HICP, nur bei Bedarf |
+| Muhammed | Datensatz EZB (ECB) HICP , nur bei Bedarf |
 
 ## Thema
 
