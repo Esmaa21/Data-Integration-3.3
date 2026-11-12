@@ -1,6 +1,6 @@
 # Data-Integration-3.3
 
-**Projektfrage in einem Satz:** Hängen Online-Aufmerksamkeit (Wikipedia-Aufrufe) und Medienberichterstattung (GDELT) zu fünf großen Künstlern mit der relativen Preisentwicklung von Kino, Theater, Konzert und Zirkus in Deutschland von 2017 bis 2026 zusammen?
+**Projektfrage in einem Satz:** Hängen Online-Aufmerksamkeit (Wikipedia-Aufrufe) und Medienberichterstattung (GDELT) zu fünf großen Künstlern mit der relativen Preisentwicklung von Kino, Theater, Konzert und Zirkus in Deutschland von 2017 bis 2025 zusammen?
 
 Gruppenrepository für das Semesterprojekt im Modul **DIS 3.3 Data Integration** an der TH Köln. Diese README ist die zentrale Projektübersicht. Die ausführlichen Beschreibungen der Datensätze liegen in den GitHub-Bereichen der jeweils verantwortlichen Gruppenmitglieder.
 
@@ -25,7 +25,7 @@ Gruppenrepository für das Semesterprojekt im Modul **DIS 3.3 Data Integration**
 
 ## Thema
 
-**Thema:** Zusammenhangsanalyse zwischen Online-Aufmerksamkeit, Medienberichterstattung und der relativen Preisentwicklung von Kulturangeboten in Deutschland (2017–2026).
+**Thema:** Zusammenhangsanalyse zwischen Online-Aufmerksamkeit, Medienberichterstattung und der relativen Preisentwicklung von Kulturangeboten in Deutschland (2017–2025).
 
 Wir verbinden drei offene Datenquellen:
 
@@ -40,7 +40,7 @@ Ziel ist es, gemeinsame Entwicklungen und zeitliche Abfolgen dieser Größen sic
 | Aspekt | Festlegung |
 |---|---|
 | Region | Nur Deutschland. Nachbarländer höchstens kurz als Kontext, nicht als Teil der Untersuchung |
-| Zeitraum | Januar 2017 bis Januar 2026, monatlich |
+| Zeitraum | Januar 2017 bis Dezember 2025, monatlich |
 | Künstler | Taylor Swift, Ed Sheeran, Elton John, Bruce Springsteen, Lady Gaga (siehe unten) |
 | Datensätze | Zunächst nur die drei Kerndatensätze unten. Weitere Datensätze aus der Gruppe nur bei tatsächlichem Bedarf |
 
@@ -102,7 +102,7 @@ Die Tabellenstrukturen für die drei Datensätze haben wir gemeinsam festgelegt.
 
 ## Forschungsfragen
 
-**F1:** Gehen Veränderungen der Online-Aufmerksamkeit (Aufrufe deutschsprachiger Wikipedia-Artikel ausgewählter Künstler) und der Medienberichterstattung (Anzahl GDELT-Nachrichtenartikel zu diesen Künstlern) mit Veränderungen des relativen Preisindex für den Besuch von Kino, Theater, Konzert und Zirkus (Destatis CC13-09421 geteilt durch den VPI-Gesamtindex) in Deutschland von 2017 bis 2026 einher?
+**F1:** Gehen Veränderungen der Online-Aufmerksamkeit (Aufrufe deutschsprachiger Wikipedia-Artikel ausgewählter Künstler) und der Medienberichterstattung (Anzahl GDELT-Nachrichtenartikel zu diesen Künstlern) mit Veränderungen des relativen Preisindex für den Besuch von Kino, Theater, Konzert und Zirkus (Destatis CC13-09421 geteilt durch den VPI-Gesamtindex) in Deutschland von 2017 bis 2025 einher?
 
 **F2:** Folgen die Wikipedia-Aufrufe ausgewählter Künstler zeitlich der Medienberichterstattung über sie, und wie stark reagieren beide auf große Tour-Ankündigungen und Tourneen in Deutschland (z. B. Taylor Swifts Eras Tour in Gelsenkirchen, Hamburg und München, Juli 2024)?
 
