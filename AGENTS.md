@@ -28,9 +28,25 @@ Wir untersuchen, ob die Aufmerksamkeit für ausgewählte Künstler (Aufrufe deut
 
 <!-- TODO Idman -->
 
-### Destatis Verbraucherpreisindex (Tanja)
+### Verbraucherpreisindex: Deutschland, Monate (Tabelle 61111-0002) (Tanja)
+- Quelle: https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0002
+- Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0), https://www.govdata.de/dl-de/by-2-0. Nutzung mit Nennung von Destatis, Lizenzhinweis mit Link, Verweis auf den Datensatz (mit Link) und Vermerk „eigene Berechnung“ bei Veränderung der Daten
+- Zugriff: kostenloser Download ohne Registrierung aus GENESIS-Online; die Datei (CSV im Flat-Layout) enthält keinen Exportzeitstempel, daher das Abrufdatum selbst dokumentieren
+- Nur Deutschland gesamt (`DG`), keine regionale Gliederung. Drei Maße pro Monat: Index (2020 = 100), Veränderung zum Vorjahresmonat (%), Veränderung zum Vormonat (%)
+- Fallen: CSV mit UTF-8 BOM und Semikolon; Dezimalkomma, Werte als Text; die beiden %-Maße sind in keiner Spalte unterscheidbar, nur die Zeilenreihenfolge im Monat trennt sie (Index, dann Vorjahr, dann Vormonat); Zeilen sind nicht nach Zeit sortiert; Jahr und Monat (MONAT02) getrennt, Datum `YYYY-MM` muss gebaut werden; 11 von 18 Spalten sind konstant
+- Lücke: Okt-Dez 2026 waren zum Zeitpunkt des Downloads noch nicht verfügbar (Platzhalter `...`, 9 Zellen); in `value` keine leeren Zellen, `-` (13 Zeilen, Vormonatsveränderung) bedeutet 0
+- Einheiten: `value` = Index in Indexpunkten (2020 = 100) bzw. Veränderungsraten in %
+- Personenbezogene Daten: keine. Nationaler, aggregierter Monatsindex ohne Personen, Haushalte oder kleine Gruppen
 
-<!-- TODO Tanja -->
+### Verbraucherpreisindex: Deutschland, Monate, COICOP-Hierarchie (Tabelle 61111-0004, Serie CC13-09421) (Tanja)
+- Quelle: https://genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0004
+- Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0), https://www.govdata.de/dl-de/by-2-0. Nutzung mit Nennung von Destatis, Lizenzhinweis mit Link, Verweis auf den Datensatz (mit Link) und Vermerk „eigene Berechnung“ bei Veränderung der Daten
+- Zugriff: kostenloser Download ohne Registrierung aus GENESIS-Online; die Datei (CSV im Flat-Layout) enthält keinen Exportzeitstempel, daher das Abrufdatum selbst dokumentieren
+- Nur Deutschland gesamt (`DG`), keine regionale Gliederung. Genutzt wird die Serie `CC13-09421 (Besuch von Kino, Theater, Konzert, Zirkus u. Ä.)`; Konzerte sind nicht separat ausgewiesen
+- Fallen: CSV mit UTF-8 BOM und Semikolon als Trennzeichen; Dezimalkomma, Werte als Text (100,8); Platzhalter `...` für Okt-Dez 2026 (3 Zeilen für CC13-09421) erzeugen beim Umwandeln Fehler und müssen durch leere Zellen ersetzt werden; Zeilen sind weder nach Jahr noch nach Monat sortiert; Jahr (`time`) und Monat (z. B. `MONAT02`) stehen in getrennten Spalten, das Datum `YYYY-MM` muss gebaut werden; 13 von 22 Spalten sind konstant (Metadaten in jeder Zeile wiederholt)
+- Lücke: Okt-Dez 2026 waren zum Zeitpunkt des Downloads noch nicht verfügbar (Platzhalter `...`, 3 Zeilen für CC13-09421); Flag `()` bei CC13-09421 für Apr-Jun 2020 und Nov 2020-Jun 2021 (Aussagewert eingeschränkt, Corona-Zeit)
+- Einheiten: `value` = Verbraucherpreisindex in Indexpunkten, Basis 2020 = 100
+- Personenbezogene Daten: keine. Nationaler, aggregierter Monatsindex ohne Personen, Haushalte oder kleine Gruppen
 
 ### Optional: HICP – Cinemas, theatres and concerts (Muhammed)
 
