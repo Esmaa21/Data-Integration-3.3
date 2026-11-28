@@ -143,7 +143,7 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
 - *Offen:* R1.3 im FAIR-Review noch zu ergänzen.
 
 ### 10.11.2026 · Recherche zu Künstlern, die Deutschland zwischen 2017 und 2025 besucht haben · Tanja
-- **Tool und Modell:** **ChatGPT (GPT-6)**
+- **Tool und Modell:** ChatGPT (GPT-6)
 - **Prompts (wörtlich)**:
     - „when and where (in which German cities) were the shows of Cirque du Soleil between 01.01.2017 - 01.12.2025 in Germany? Provide the links to prove"
     - „and when did Johnny Depp visit Germany during this period of time?"
@@ -154,3 +154,11 @@ Jede Person trägt ihre eigene KI-Nutzung selbst ein. Angaben über andere Perso
     - Liste bekannter Theaterschauspieler in Deutschland (John Malkovich, Isabelle Huppert, Ingeborga Dapkūnaitė, Sophie von Kessel) mit Terminen, Orten und Quellen, dazu eine Übersicht nach Jahren
 - **Übernommen, geändert, verworfen:** Als Theaterschauspieler habe ich nur John Malkovich übernommen. Die Termine habe ich nicht vollständig übernommen: z.B. Die Liste der Konzerte von Johnny Depp in Deutschland war fehlerhaft und unvollständig. Bei einigen genannten Terminen hat nach meiner Recherche kein Auftritt stattgefunden, und einige Konzerte hat die KI nicht genannt (zum Beispiel Mainz am 30.06.2023 und Oberhausen am 20.06.2023). Diese habe ich selbst ergänzt.
 - **Wie geprüft:** Die Termine habe ich selbst durch eine Internetrecherche nachgeprüft.
+
+### 28.11.2026 · Lab 4, Task 8 · Datensatzliste für die beiden Destatis-VPI-Tabellen · Tanja
+- **Tool und Modell**: Claude (Anthropic), Claude Sonnet 5.5
+- **Prompt:** (sinngemäß) Ich habe meine beiden Datensatzprofile (Tabellen 61111-0002 und 61111-0004) hinzugefügt, die Vorlage unseres gemeinsamen Gruppen-AGENTS.md gezeigt und gebeten, die Informationen zu den Datensätzen entsprechend zu gruppieren. Danach habe ich in Folgeprompts einzelne Zeilen und meine endgültige Fassung prüfen lassen.
+- **Output:** Zwei Listen, mehrfach überarbeitet.
+- **Betroffene Dateien:** `labs/01/dataset.md` und `labs/01/dataset_2.md` in meinem Lab-Repo.
+- **Übernommen, geändert, verworfen:** Übernommen: Aufbau der Einträge nach dem Muster und kleinere Korrekturen (Listenstrich, einheitliche Gedankenstriche. Geändert: Quelle habe ich auf den Tabellenlink gekürzt. Verworfen: die Erklärung der value_q-Flags unter Einheiten; der Hinweis, dass Indexwerte nicht summiert werden dürfen (methodischer Hinweis, keine Falle in den Daten).
+- **Wie geprüft:** Alle Zahlen mit meinen Profilen abgeglichen und die CSV geöffnet
